@@ -7,4 +7,4 @@ stage('build a package')
 {
 sh 'mvn clean package'
 }
-{
+}
