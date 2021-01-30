@@ -10,10 +10,11 @@ stage('build a package')
 }
  stage('sending an email')
  {
-  emailext body: '''Hi  Team,
-Jenkins job is running please be careful .
+  mail bcc: '', body: '''Hi ,
+
+Jenkin job is running.
 
 Thanks,
-Praveen''', subject: 'About jenkins', to: 'praveen1993.naru@gmail.com'
+Praveen''', cc: 'praveenit.naru@gmail.com', from: '', replyTo: '', subject: 'Jenkins job info', to: 'praveen1993.naru@gmail.com'
  }
 }
