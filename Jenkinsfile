@@ -1,7 +1,7 @@
 node{
 stage('git checkout')
 {
-git 'https://github.com/NaruPraveenKumar/Hello.git'
+git 'https://github.com/NaruPraveenKumar/Hello'
 }
 stage('build a package')
 {
